@@ -1,0 +1,61 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main-container {
+	background-color: #BAD696
+}
+
+.input-group {
+	border-radius: 0px !important;
+	background-color: #E4F1C3 !important;
+}
+
+.input-group-btn, .input-group-addon {
+	border-radius: 0px !important;
+}
+
+.jumbotron {
+	text-align: center !important;
+	background-color: #E4F1C3 !important; 
+	border-radius: 0px !important;
+}
+
+.btn-lg {
+	border-radius: 3px !important;
+	border-color: #9EBF6D !important;
+	background-color: #D8F1D3 !important;
+	color: #9EBF6D !important;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background-color: white;
+}
+
+.footer p {
+	margin: 0px;
+	text-align: center;
+	font-size: 6pt;
+}
+
+.box h3{
+	text-align:center;
+	position:relative;
+	top:80px;
+}
+.box {
+	width:70%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+.effect1 {
+	-webkit-box-shadow: 0 7px 6px -6px #777;
+	   -moz-box-shadow: 0 7px 6px -6px #777;
+	        box-shadow: 0 7px 6px -6px #777;
+}

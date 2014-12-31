@@ -1,0 +1,60 @@
+<div id="main-container" class="fluid-container">
+	<div class="row">
+		<div class="col-xs-12 col-md-12 col-lg-12">
+			<%= form_for :uri, url: urls_path do |f| -%>
+		    <div class="input-group input-group-lg">
+			    <span class="input-group-addon">
+			    	<span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+			    </span>
+			    <%= f.text_field :full_url, class: "form-control", placeholder: "Paste link to shorten" %>
+		      <span class="input-group-btn">
+		      	<%= f.submit "Shortify", :disable_with => 'Shortifying...', class: "btn btn-default" %>
+		      </span>
+		    </div><!-- /input-group -->
+	    <% end -%>
+	  </div><!-- /.col-lg-6 -->
+	</div>
+
+	<div class="row">
+		<div class="jumbotron effect1">
+		  <h1>Bitly</h1>
+		  <p>Unleash the power of the link</p>
+		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="container">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<td>Short URL</td>
+							<td>Full URL</td>
+							<td>Click Count</td>
+						</tr>
+					</thead>
+					<tbody>
+						<% @urls.each do |url| %>
+							<tr>
+								<td><%= url.short_url %></td>
+								<td><%= url.full_url %></td>
+								<td><%= url.click_count %></td>
+							</tr>
+						<% end %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<footer class="footer">
+			  <div class="container">
+			    <p class="text-muted">© 2014 Bitly™ Handmade in Code Division</p>
+			  </div>
+			</footer>
+		</div>
+	</div>
+</div>
+
